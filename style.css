@@ -1,0 +1,166 @@
+*, *::before, *::after { 
+    box-sizing: border-box; 
+} 
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-mobile.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+} 
+    
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+}
+
+.hero-body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Layout */
+
+.logo-header {
+    width: 150px;
+    margin-top: 3em;
+    margin-bottom: 2.7em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 2.3em;
+}
+
+.hero-image {
+    margin-bottom: 4em;
+}
+
+.hero {
+    text-align: center; 
+    margin-bottom: 7em;
+}
+
+.hero-body {
+    margin-bottom: 2.5em;
+}
+
+a.btn-register {
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+    padding: .8em 6em;
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0,0,0,0.8);
+    transition: all .3s ease;
+}
+
+a.btn-register:hover,
+a.btn-register:focus {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+ul.social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 1em;
+}
+
+.social-icons a {
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+
+    .logo-header {
+        margin-top: 0;
+        width: 200px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3em;
+        min-height: 100vh;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-image {
+        width: 60%;
+        margin: 0;
+    }
+    
+    .hero {
+        width: 40%;
+        text-align: left;
+        margin-left: 3em;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    a.btn-register {
+        padding: 1em 4em;
+    } 
+
+    ul.social-icons {
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+
+
+
